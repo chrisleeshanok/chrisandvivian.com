@@ -1,3 +1,65 @@
-.App {
+@import '../constants.scss';
 
+.App {
+  background-color: map-get($colors, backgroundColor);
+  height: 100vh;
+}
+
+.Hero {
+  height: 90vh;
+  width: 100vw;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+
+  color: map-get($colors, negative);
+  font-family: 'Architects Daughter', cursive;
+
+  background-image: url('../media/images/cave2.jpg');
+  background-size: 100%;
+  background-position: bottom center;
+
+  .centered-wrapper {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    top: 20%;
+
+    .heroGraphic {
+      width: 36vh;
+      height: 36vh;
+    }
+  }
+}
+
+.detailsSection {
+  text-align: center;
+  position: relative;
+
+  .and {
+    display: inline-block;
+    font-size: 6rem;
+    font-family: 'Dancing Script';
+    color: map-get($colors, primary30);
+    text-align: top;
+    top: -8rem;
+    position: relative;
+  }
+
+  .are-getting-married {
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      color: map-get($colors, secondary100);
+      font-family: 'Dancing Script';
+    }
+
+    p.smaller {
+      font-size: 1.1rem;
+      color: map-get($colors, primary100);
+      font-family: $serifTextFont;
+    }
+  }
 }

@@ -1,0 +1,39 @@
+@import '../constants.scss';
+
+.Page {
+
+
+  section {
+    width: 1050px;
+    margin: 3rem auto;
+    padding: 3rem 0;
+  }
+
+  h1 {
+    text-align: center;
+    color: map-get($colors, secondary100);
+    font-family: 'Dancing Script';
+    font-size: 3rem;
+    margin-top: 0rem;
+  }
+
+  p {
+    color: map-get($colors, primary100);
+    font-family: 'Georgia';
+    font-size: 1.1rem;
+    line-height: 1.4em;
+  }
+}
+
+.storySection {
+
+  h1 {
+    color: map-get($colors, primary30);
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: $serifTextFont;
+  }
+}
