@@ -15,6 +15,7 @@ interface iState {
 
 import themanorCeremonyImage from '../media/images/themanor-ceremony2.jpg'
 import themanorReceptionImage from '../media/images/themanor-elizabeth-hall.jpg'
+import themanor from '../media/images/themanor.jpg'
 
 class App extends React.PureComponent<iProps, iState> {
 
@@ -74,6 +75,29 @@ class App extends React.PureComponent<iProps, iState> {
             <h1>When & Where</h1>
 
             <div className="wrapper">
+              <div className="card full-width">
+                <div className="base">
+                  <div className="photo">
+                  <img src={themanor}/>
+                  </div>
+                  <div className="details">
+                    <div className="description">
+                      <h3>The Venue: The Manor ByPeterandPauls.com</h3>
+                      <p>
+                        Nestled amongst the magnificent greens of The Carrying Place Golf & Country Club, the venue’s modern interior and impeccable setting is unforgettable.
+                        Located 20 minutes north of Vaughan, The Manor is anchored by a beautiful man-made pond and lush greenery.
+                      </p>
+                    </div>
+                    <div className="address">
+                      16750 Weston Rd, Kettleby, ON L0G 1J0<br/>
+                      <a href="https://goo.gl/maps/LDxg7h75DHn" target="_blank">Open in Maps</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="wrapper">
               <div className="card">
                 <div className="base">
                   <div className="photo">
@@ -119,25 +143,18 @@ class App extends React.PureComponent<iProps, iState> {
 
         <Page>
 
-          <section className="wedding-party">
-            <h1>The Wedding Party</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in justo sit amet nulla placerat fringilla at ac sem. Ut commodo, neque quis lacinia tristique, lectus massa pharetra massa, eget posuere ligula magna et nibh. Etiam in rutrum justo. Vivamus tempus laoreet erat quis rutrum. Curabitur molestie dignissim nibh, placerat lacinia libero. Vestibulum non tellus neque. Nam placerat eget elit id malesuada. In hendrerit consequat nibh non cursus. Integer congue eu neque id ultrices. Fusce lacinia placerat nulla a varius. Integer tincidunt odio nec rhoncus viverra. Quisque nec consectetur quam. Etiam sed dictum erat, id pellentesque mauris. Aenean pharetra euismod semper. Sed et imperdiet lacus.
-            </p>
-          </section>
-
           <section className="rsvp">
             <h1>RSVP</h1>
           </section>
 
 
-          <section className="faq">
+          {/* <section className="faq">
             <h1>FAQ</h1>
           </section>
 
           <section className="contact">
             <h1>Contact</h1>
-          </section>
+          </section> */}
         </Page>
 
 

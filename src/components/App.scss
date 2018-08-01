@@ -1,5 +1,15 @@
 @import '../constants.scss';
 
+
+a:link, a:visited {
+  color: map-get($colors, primary80);
+  text-decoration: underline;
+}
+a:hover {
+  color: map-get($colors, primary50);
+  text-decoration: underline;
+}
+
 .App {
   background-color: map-get($colors, backgroundColor);
   height: 100vh;
@@ -134,12 +144,33 @@ nav {
     .time {
       margin-top: 2rem;
       text-align: center;
-      font-family: $cursiveTextFont;
+      font-family: $alternativeCursiveFont;
+      font-size: 1.2rem;
+    }
+
+    .address {
+      text-align: center;
+      font-family: $alternativeCursiveFont;
       font-size: 1.2rem;
     }
   }
 
-  .card.right {
+  &.right {
     float:right;
+  }
+
+  &.full-width {
+    float: default;
+    width: 100% !important;
+
+    img {
+      width: 100%;
+    }
+
+    .details {
+      p {
+        min-height: default;
+      }
+    }
   }
 }
