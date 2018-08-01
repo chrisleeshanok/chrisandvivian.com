@@ -4,6 +4,7 @@ import './App.scss'
 import Hero from './Hero'
 import Page from './Page'
 import Person from './Person'
+import Card from './Card'
 
 interface iProps {
 
@@ -79,69 +80,48 @@ class App extends React.PureComponent<iProps, iState> {
             <h1>When & Where</h1>
 
             <div className="wrapper">
-              <div className="card full-width">
-                <div className="base">
-                  <div className="photo">
-                  <img src={themanor}/>
-                  </div>
-                  <div className="details">
-                    <div className="description">
-                      <h3>The Venue: The Manor ByPeterandPauls.com</h3>
-                      <p>
-                        Nestled amongst the magnificent greens of The Carrying Place Golf & Country Club, the venue’s modern interior and impeccable setting is unforgettable.
-                        Located 20 minutes north of Vaughan, The Manor is anchored by a beautiful man-made pond and lush greenery.
-                      </p>
-                    </div>
-                    <div className="address">
-                      16750 Weston Rd, Kettleby, ON L0G 1J0<br/>
-                      <a href="https://goo.gl/maps/LDxg7h75DHn" target="_blank">Open in Maps</a>
-                    </div>
-                  </div>
+              <Card className="full-width" image={themanor}>
+                <div className="description">
+                  <h3>The Venue: The Manor ByPeterandPauls.com</h3>
+                  <p>
+                    Nestled amongst the magnificent greens of The Carrying Place Golf & Country Club, the venue’s modern interior and impeccable setting is unforgettable.
+                    Located 20 minutes north of Vaughan, The Manor is anchored by a beautiful man-made pond and lush greenery.
+                  </p>
                 </div>
-              </div>
+                <div className="address">
+                  16750 Weston Rd, Kettleby, ON L0G 1J0<br/>
+                  <a href="https://goo.gl/maps/LDxg7h75DHn" target="_blank">Open in Maps</a>
+                </div>
+              </Card>
             </div>
 
             <div className="wrapper">
-              <div className="card">
-                <div className="base">
-                  <div className="photo">
-                    <img src={themanorCeremonyImage}/>
-                  </div>
-                  <div className="details">
-                    <div className="description">
-                      <h3>Wedding Ceremony</h3>
-                      <p>
-                        Our ceremony will take place outdoors, but we'll be covered. We're good for whatever weather a Canadian October brings us.
-                      </p>
-                    </div>
-                    <div className="time">
-                      October 13, 2018<br/>
-                      5:00pm to 6:00pm
-                    </div>
-                  </div>
+              <Card className="left" image={themanorCeremonyImage}>
+                <div className="description">
+                  <h3>Wedding Ceremony</h3>
+                  <p>
+                    Our ceremony will take place outdoors, but we'll be covered. We're good for whatever weather a Canadian October brings us.
+                  </p>
                 </div>
-              </div>
+                <div className="time">
+                  October 13, 2018<br/>
+                  5:00pm to 6:00pm
+                </div>
+              </Card>
 
-              <div className="card right">
-                <div className="base">
-                  <div className="photo">
-                  <img src={themanorReceptionImage}/>
-                  </div>
-                  <div className="details">
-                    <div className="description">
-                      <h3>Wedding Party</h3>
-                      <p>
-                        Please join us for cocktails, dinner, dancing, games, photos, and a night packed with entertainment.
-                        We have the lower (Elizabeth) hall which means we have full access to the grounds, including the lake!
-                      </p>
-                    </div>
-                    <div className="time">
-                      October 13, 2018<br/>
-                      6:00pm to 1:00am
-                    </div>
-                  </div>
+              <Card className="right" image={themanorReceptionImage}>
+                <div className="description">
+                  <h3>Wedding Party</h3>
+                  <p>
+                    Please join us for cocktails, dinner, dancing, games, photos, and a night packed with entertainment.
+                    We have the lower (Elizabeth) hall which means we have full access to the grounds, including the lake!
+                  </p>
                 </div>
-              </div>
+                <div className="time">
+                  October 13, 2018<br/>
+                  6:00pm to 1:00am
+                </div>
+              </Card>
             </div>
 
           </section>
@@ -166,18 +146,6 @@ class App extends React.PureComponent<iProps, iState> {
             </div>
           </div>
         </Page>
-        <Page>
-
-          {/* <section className="faq">
-            <h1>FAQ</h1>
-          </section>
-
-          <section className="contact">
-            <h1>Contact</h1>
-          </section> */}
-        </Page>
-
-
       </div>
     )
   }

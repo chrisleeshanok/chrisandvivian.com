@@ -1,0 +1,73 @@
+@import '../constants.scss';
+
+.card, .Card {
+  margin: 0 auto;
+  width: 50%;
+
+  position: relative;
+
+  .base {
+    margin: 1rem;
+    background-color: map-get($colors, negative);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .details {
+    padding: 1rem 2rem 2rem 2rem;
+
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-family: $alternativeCursiveFont;
+      color: map-get($colors, primary100);
+    }
+
+    p {
+      font-family: $serifTextFont;
+      font-size: 0.95rem;
+      line-height: 1.5rem;
+      min-height: 110px;
+      text-align: center;
+      color: lighten(#000, 20%);
+    }
+
+    .time {
+      margin-top: 2rem;
+      text-align: center;
+      font-family: $alternativeCursiveFont;
+      font-size: 1.2rem;
+    }
+
+    .address {
+      text-align: center;
+      font-family: $alternativeCursiveFont;
+      font-size: 1.2rem;
+    }
+  }
+
+  &.left {
+    float:left;
+  }
+
+  &.right {
+    float:right;
+  }
+
+  &.full-width {
+    float: default;
+    width: 100% !important;
+
+    img {
+      width: 100%;
+    }
+
+    .details {
+      p {
+        min-height: default;
+      }
+    }
+  }
+}
