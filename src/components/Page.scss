@@ -1,12 +1,10 @@
 @import '../constants.scss';
 
 .Page {
-
-
   section {
-    width: 1050px;
-    margin: 3rem auto;
-    padding: 3rem 0;
+    max-width: 1050px;
+    margin: 0rem auto;
+    padding: 6rem 0;
   }
 
   h1 {
@@ -27,6 +25,11 @@
 
 .storySection {
 
+  background-image: url('../media/images/mx5.jpg');
+  background-position: center right;
+  background-size: 100%;
+  padding: 10vh 0 30vh 0;
+
   h1 {
     color: map-get($colors, primary30);
   }
@@ -35,5 +38,13 @@
     font-size: 1.1rem;
     color: #fff;
     font-family: $serifTextFont;
+  }
+}
+
+.whenAndWhereSection {
+  .wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }

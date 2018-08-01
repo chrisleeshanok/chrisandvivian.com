@@ -5,8 +5,13 @@
   height: 100vh;
 }
 
+.loading {
+  height: 100vh;
+  width: 100vw;
+}
+
 .Hero {
-  height: 90vh;
+  height: 98vh;
   width: 100vw;
   text-align: center;
   display: table-cell;
@@ -14,7 +19,7 @@
   position: relative;
 
   color: map-get($colors, negative);
-  font-family: 'Architects Daughter', cursive;
+  font-family: $alternativeCursiveFont;
 
   background-image: url('../media/images/cave2.jpg');
   background-size: 100%;
@@ -33,6 +38,33 @@
   }
 }
 
+nav {
+  background-color: map-get($colors, primary25);
+  padding: 20px 0;
+  font-family: $serifTextFont;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: map-get($colors, primary100);
+  text-align: center;
+  border-bottom: 1px solid map-get($colors, primary30);
+
+  .wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0px 20px;
+    }
+  }
+}
+
 .detailsSection {
   text-align: center;
   position: relative;
@@ -40,7 +72,7 @@
   .and {
     display: inline-block;
     font-size: 6rem;
-    font-family: 'Dancing Script';
+    font-family: $cursiveTextFont;
     color: map-get($colors, primary30);
     text-align: top;
     top: -8rem;
@@ -53,7 +85,7 @@
       margin-bottom: 1rem;
       font-size: 3rem;
       color: map-get($colors, secondary100);
-      font-family: 'Dancing Script';
+      font-family: $cursiveTextFont;
     }
 
     p.smaller {
@@ -61,5 +93,53 @@
       color: map-get($colors, primary100);
       font-family: $serifTextFont;
     }
+  }
+}
+
+.card {
+  margin: 0 auto;
+  width: 50%;
+  float: left;
+
+  position: relative;
+
+  .base {
+    margin: 1rem;
+    background-color: map-get($colors, negative);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .details {
+    padding: 1rem 2rem 2rem 2rem;
+
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-family: $alternativeCursiveFont;
+      color: map-get($colors, primary100);
+    }
+
+    p {
+      font-family: $serifTextFont;
+      font-size: 0.95rem;
+      line-height: 1.5rem;
+      min-height: 110px;
+      text-align: center;
+      color: lighten(#000, 20%);
+    }
+
+    .time {
+      margin-top: 2rem;
+      text-align: center;
+      font-family: $cursiveTextFont;
+      font-size: 1.2rem;
+    }
+  }
+
+  .card.right {
+    float:right;
   }
 }

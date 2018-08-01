@@ -6,11 +6,15 @@ $_primaryColor: #213352;
 $colors: (
   primary100: $_primaryColor,
   primary80: lighten($_primaryColor, 20%),
-  primary30: lighten($_primaryColor, 70%),
   primary50: lighten($_primaryColor, 50%),
+  primary30: lighten($_primaryColor, 70%),
+  primary25: lighten($_primaryColor, 75%),
+
   secondary100: #ae9d89,
   negative: #fff,
   backgroundColor: #fff
 );
 
-$serifTextFont: Georgia,Times,"Times New Roman",serif;
+$cursiveTextFont: 'Dancing Script', cursive;
+$alternativeCursiveFont: 'Architects Daughter', cursive;
+$serifTextFont: Georgia,Times,"Times New Roman", serif;

@@ -10,14 +10,44 @@ interface iProps {
 }
 
 interface iState {
-
+  isLoaded: boolean
 }
 
+import themanorCeremonyImage from '../media/images/themanor-ceremony2.jpg'
+import themanorReceptionImage from '../media/images/themanor-elizabeth-hall.jpg'
+
 class App extends React.PureComponent<iProps, iState> {
+
+  constructor(props: iProps) {
+    super(props)
+
+    this.state = {
+      isLoaded: false
+    }
+  }
+
+  componentDidMount() {
+    this.setState({
+      isLoaded: true
+    })
+  }
+
   public render() {
     return (
       <div className="App">
+        {!this.state.isLoaded ? <div className="loading">Loading</div> : null}
         <Hero/>
+
+        <nav>
+          <div className="wrapper">
+            <ul>
+              <li>Top</li>
+              <li>Groom & Bride</li>
+              <li>When & Where</li>
+            </ul>
+          </div>
+        </nav>
+
         <Page className="detailsSection">
           <section className="details">
             <Person name="Chris Lee-Shanok"/>
@@ -30,7 +60,7 @@ class App extends React.PureComponent<iProps, iState> {
           </section>
         </Page>
 
-        <Page className="storySection" backgroundColor="#213352">
+        <Page className="storySection">
           <section className="story">
             <h1>Our Story</h1>
             <p>
@@ -38,14 +68,56 @@ class App extends React.PureComponent<iProps, iState> {
             </p>
           </section>
         </Page>
-        <Page>
 
-          <section className="story">
-            <h1>The Wedding</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in justo sit amet nulla placerat fringilla at ac sem. Ut commodo, neque quis lacinia tristique, lectus massa pharetra massa, eget posuere ligula magna et nibh. Etiam in rutrum justo. Vivamus tempus laoreet erat quis rutrum. Curabitur molestie dignissim nibh, placerat lacinia libero. Vestibulum non tellus neque. Nam placerat eget elit id malesuada. In hendrerit consequat nibh non cursus. Integer congue eu neque id ultrices. Fusce lacinia placerat nulla a varius. Integer tincidunt odio nec rhoncus viverra. Quisque nec consectetur quam. Etiam sed dictum erat, id pellentesque mauris. Aenean pharetra euismod semper. Sed et imperdiet lacus.
-            </p>
+        <Page className="whenAndWhereSection" backgroundColor="#f6f8fb">
+          <section>
+            <h1>When & Where</h1>
+
+            <div className="wrapper">
+              <div className="card">
+                <div className="base">
+                  <div className="photo">
+                    <img src={themanorCeremonyImage}/>
+                  </div>
+                  <div className="details">
+                    <div className="description">
+                      <h3>Wedding Ceremony</h3>
+                      <p>
+                        Our ceremony will take place outdoors, but we'll be covered. We're good for whatever weather a Canadian October brings us.
+                      </p>
+                    </div>
+                    <div className="time">
+                      5:00pm to 6:00pm
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card right">
+                <div className="base">
+                  <div className="photo">
+                  <img src={themanorReceptionImage}/>
+                  </div>
+                  <div className="details">
+                    <div className="description">
+                      <h3>Wedding Party</h3>
+                      <p>
+                        Please join us for cocktails, dinner, dancing, games, photos, and a night packed with entertainment.
+                        We have the lower (Elizabeth) hall which means we have full access to the grounds, including the lake!
+                      </p>
+                    </div>
+                    <div className="time">
+                      6:00pm to 1:00am
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </section>
+        </Page>
+
+        <Page>
 
           <section className="wedding-party">
             <h1>The Wedding Party</h1>

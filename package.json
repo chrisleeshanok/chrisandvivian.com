@@ -2,10 +2,13 @@
   "name": "chrisandvivian",
   "version": "0.1.0",
   "private": true,
+  "typings": "./src/index.d.ts",
   "dependencies": {
     "@petejkim/react-scripts-ts-sass": "2.15.2",
+    "bootstrap-sass": "^3.3.7",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-reveal": "^1.2.2"
   },
   "scripts": {
     "start": "react-scripts-ts start",
