@@ -174,3 +174,77 @@ nav {
     }
   }
 }
+
+
+.rsvp-wrapper {
+  margin: 0;
+  padding: 0;
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .photo {
+    background-image: url('../media/images/camera1.jpg');
+    background-size: 100%;
+    background-position: bottom right;
+    height: 70vh;
+    width: 50%;
+    margin: 0;
+    float: left;
+  }
+
+  .details {
+    height: 70vh;
+    width: 50%;
+    display: table-cell;
+    margin: 0;
+    float: right;
+    vertical-align: center;
+    font-family: $alternativeCursiveFont;
+    text-align: center;
+
+    padding: 20vh 5rem;
+
+    p {
+      color: map-get($colors, primary100);
+      font-family: $serifTextFont;
+      line-height: 1.5rem;
+      font-size: 0.95rem;
+      color: lighten(#000, 20%);
+      letter-spacing: 0.1px;
+
+      &.important {
+        font-family: $alternativeCursiveFont;
+        font-size: 1.2rem;
+      }
+    }
+
+    button.rsvp-button {
+      outline: none;
+      margin: 0 auto;
+      margin-top: 2rem;
+      background-color: map-get($colors, primary30);
+      border: none;
+      color: map-get($colors, primary100);
+      font-size: 1rem;
+      font-family: $serifTextFont;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: map-get($colors, primary25);
+        background-color: map-get($colors, primary100);
+      }
+
+      &:active {
+        color: map-get($colors, primary25);
+        background-color: map-get($colors, primary80);
+      }
+
+    }
+  }
+}

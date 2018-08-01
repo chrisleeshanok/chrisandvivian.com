@@ -33,6 +33,10 @@ class App extends React.PureComponent<iProps, iState> {
     })
   }
 
+  private openRSVPURL = (): void => {
+    window.location.href = 'https://withjoy.com/chrisandvivian2018/rsvp';
+  }
+
   public render() {
     return (
       <div className="App">
@@ -111,6 +115,7 @@ class App extends React.PureComponent<iProps, iState> {
                       </p>
                     </div>
                     <div className="time">
+                      October 13, 2018<br/>
                       5:00pm to 6:00pm
                     </div>
                   </div>
@@ -131,6 +136,7 @@ class App extends React.PureComponent<iProps, iState> {
                       </p>
                     </div>
                     <div className="time">
+                      October 13, 2018<br/>
                       6:00pm to 1:00am
                     </div>
                   </div>
@@ -141,12 +147,26 @@ class App extends React.PureComponent<iProps, iState> {
           </section>
         </Page>
 
+        <Page className="rsvpSection">
+          <div className="rsvp-wrapper">
+            <div className="photo">
+
+            </div>
+            <div className="details">
+              <h1>Will you celebrate with us?</h1>
+              <p className="important">
+                Please let us know by August 31st if you are able to attend!
+              </p>
+              <p>
+                We are using WithJoy's RSVP system. If you experience any trouble, <a href="mailto:chrisxvivian@gmail.com">email us</a> and we'll help you out. <br/>
+                If you are unable to RSVP electronically, please call Chris @ 1 (647) 618-5787.
+              </p>
+
+              <button className="rsvp-button" onClick={this.openRSVPURL}>RSVP</button>
+            </div>
+          </div>
+        </Page>
         <Page>
-
-          <section className="rsvp">
-            <h1>RSVP</h1>
-          </section>
-
 
           {/* <section className="faq">
             <h1>FAQ</h1>
