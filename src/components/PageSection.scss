@@ -1,0 +1,71 @@
+@import '../constants.scss';
+
+.Page {
+  z-index: 100;
+  section {
+    max-width: 1400px;
+    margin: 0rem auto;
+    padding: 6rem 6rem;
+  }
+
+  h1 {
+    text-align: center;
+    color: map-get($colors, secondary100);
+    font-family: 'Dancing Script';
+    font-size: 3rem;
+    margin-top: 0rem;
+  }
+
+  p {
+    color: map-get($colors, primary100);
+    font-family: $serifTextFont;
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+  }
+}
+
+.storySection {
+  background-image: url('../media/images/mx5.jpg');
+  background-position: bottom right;
+  padding: 0vw 0 25vw 0;
+
+  h1 {
+    color: map-get($colors, primary30);
+  }
+
+  p {
+    color: #fff;
+
+    &:last-child {
+      margin-bottom: 20vh;
+    }
+  }
+}
+
+.whenAndWhereSection {
+  .wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .Page {
+    section {
+      max-width: 1400px;
+      margin: 0rem auto;
+      padding: 6rem 6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 799px) and (min-width: 400px) {
+  .Page {
+    section {
+      max-width: 1400px;
+      margin: 0rem auto;
+      padding: 3rem 0rem;
+    }
+  }
+}

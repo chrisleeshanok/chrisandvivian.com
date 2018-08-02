@@ -21,7 +21,7 @@ a:hover {
 }
 
 .Hero {
-  height: 98vh;
+  height: 100vh;
   width: 100vw;
   text-align: center;
   display: table-cell;
@@ -50,7 +50,6 @@ a:hover {
 
 nav {
   background-color: map-get($colors, primary25);
-  padding: 20px 0;
   font-family: $serifTextFont;
   font-size: 0.9rem;
   letter-spacing: 0.05em;
@@ -58,21 +57,105 @@ nav {
   color: map-get($colors, primary100);
   text-align: center;
   border-bottom: 1px solid map-get($colors, primary30);
+  z-index: 1000;
+  overflow: visible;
+  position: relative;
 
-  .wrapper {
-    max-width: 1050px;
-    margin: 0 auto;
+  .logo-wrapper {
+    text-align: right;
+    padding-right: 3rem;
+  }
+
+  .link-wrapper {
+    text-align: left;
+  }
+
+  .cv-logo {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 0px;
+    top: 7px;
+    background-image: url('../media/images/heroGraphic2-dark-small.png');
+    background-size: 100%;
   }
 
   ul {
+    display: inline-block;
     margin: 0;
     padding: 0;
+
 
     li {
       display: inline-block;
       margin: 0px 20px;
+      padding: 20px 20px;
+      cursor: pointer;
+
+      &.rsvp {
+        color: #fff;
+        padding: 0;
+        padding-top: 20px;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 10000;
+        font-size: 1.1rem;
+        font-family: $cursiveTextFont;
+        text-align: center;
+      }
     }
   }
+}
+
+$ribbonColor: map-get($colors, secondary100);
+
+.ribbon {
+
+  background: $ribbonColor;
+  border-right: 1px solid $ribbonColor;
+  border-left: 1px solid $ribbonColor;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 5px 0 0 $ribbonColor,
+              -5px 0 0 $ribbonColor;
+  height: 60px;
+  margin: 0 5px;
+  position: relative;
+  width: 50px;
+  z-index: 10000;
+}
+.ribbon:after,
+.ribbon:before {
+  border-top: 15px solid $ribbonColor;
+  content: '';
+  height: 0;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  z-index: 10000;
+}
+.ribbon:after {
+  border-left: 50px solid transparent;
+  right: -6px;
+}
+.ribbon:before {
+  border-right: 50px solid transparent;
+  left: -6px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .detailsSection {
@@ -84,24 +167,23 @@ nav {
     font-size: 6rem;
     font-family: $cursiveTextFont;
     color: map-get($colors, primary30);
-    text-align: top;
-    top: -8rem;
-    position: relative;
+    text-align: center;
+    margin-top: 3rem;
   }
 
   .are-getting-married {
     h2 {
       margin-top: 2rem;
       margin-bottom: 1rem;
-      font-size: 3rem;
+      font-size: 3.3rem;
       color: map-get($colors, secondary100);
       font-family: $cursiveTextFont;
     }
 
     p.smaller {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       color: map-get($colors, primary100);
-      font-family: $serifTextFont;
+      font-family: $alternativeCursiveFont;
     }
   }
 }

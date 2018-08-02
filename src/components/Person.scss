@@ -15,8 +15,8 @@
   }
 
   .name {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: $serifTextFont;
-    color: map-get($colors, primary100);
+    color: lighten(#000, 60%);
   }
 }

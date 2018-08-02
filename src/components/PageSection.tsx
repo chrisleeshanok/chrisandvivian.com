@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import './Page.scss'
+import './PageSection.scss'
 
 interface iProps {
   backgroundColor?: string

@@ -8,7 +8,7 @@ interface iState {
 
 }
 
-import heroGraphic from '../media/icons/heroGraphic.svg'
+import heroGraphic from '../media/images/heroGraphic.png'
 
 export default class Hero extends React.PureComponent<iProps, iState> {
   public render(): JSX.Element {
