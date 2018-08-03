@@ -1,9 +1,10 @@
 @media all and (max-width: 1199px) {
+
   .Page {
     section {
       max-width: 1400px;
       margin: 0rem auto;
-      padding: 6rem 6rem;
+      padding: 2rem 2rem;
     }
   }
 
@@ -20,6 +21,19 @@
       max-width: 1400px;
       margin: 0rem auto;
       padding: 2rem 2rem;
+    }
+  }
+
+  .Hero {
+    background-size: auto 100%;
+
+    .centered-wrapper {
+      width: 60vw;
+      height: 100vw;
+      .heroGraphic {
+        width: 60vw;
+        height: 60vw;
+      }
     }
   }
 
@@ -45,6 +59,19 @@
     }
   }
 
+  .Hero {
+    background-size: auto 100%;
+
+    .centered-wrapper {
+      width: 60vw;
+      height: 100vw;
+      .heroGraphic {
+        width: 60vw;
+        height: 60vw;
+      }
+    }
+  }
+
   .card, .Card {
     width: 100%;
 
@@ -65,7 +92,7 @@
 @media all and (max-width: 575px) {
 
   h1 {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
   }
 
   .Page {
@@ -73,6 +100,19 @@
       max-width: 1400px;
       margin: 0rem auto;
       padding: 2rem 0.5rem;
+    }
+  }
+
+  .Hero {
+    background-size: auto 100%;
+
+    .centered-wrapper {
+      width: 60vw;
+      height: 100vw;
+      .heroGraphic {
+        width: 60vw;
+        height: 60vw;
+      }
     }
   }
 
@@ -87,6 +127,12 @@
   .rsvp-wrapper {
     .details {
       width: 100%;
+
+      p {
+        &.important {
+          font-size: 1.1rem;
+        }
+      }
     }
   }
 }

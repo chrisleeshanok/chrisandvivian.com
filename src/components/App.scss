@@ -32,7 +32,7 @@ a:hover {
   font-family: $alternativeCursiveFont;
 
   background-image: url('../media/images/cave2.jpg');
-  background-size: 100%;
+  background-size: auto 100%;
   background-position: bottom center;
 
   .centered-wrapper {
