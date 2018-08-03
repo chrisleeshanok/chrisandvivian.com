@@ -8,6 +8,41 @@
     }
   }
 
+  nav {
+    ul {
+      li {
+        margin: 0px 15px;
+        font-size: 0.9rem;
+        padding: 20px 15px;
+
+        &.rsvp {
+          top: 8px;
+          padding-top: 10px;
+          right: 20px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .cv-logo {
+      left: 20px;
+    }
+  }
+
+  .ribbon {
+    height: 60px;
+    width: 50px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container-fluid {
+    .text-right, .text-left {
+      text-align: center;
+    }
+  }
+
   .rsvp-wrapper {
     .details {
       width: 60%;
@@ -34,6 +69,14 @@
         width: 60vw;
         height: 60vw;
       }
+    }
+  }
+
+  .Person {
+    width: 30vw;
+    .photo {
+      width: 15rem;
+      height: 15rem;
     }
   }
 
@@ -71,6 +114,44 @@
       }
     }
   }
+  nav {
+    ul {
+      li {
+        margin: 0px 10px;
+        font-size: 0.8rem;
+        padding: 20px 10px;
+
+        &.rsvp {
+          top: 8px;
+          padding-top: 10px;
+          right: 10px;
+          font-size: 1rem;
+        }
+      }
+    }
+    .cv-logo {
+      left: 10px;
+    }
+  }
+
+  .ribbon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .detailsSection {
+    .and {
+      font-size: 4rem;
+      margin-top: 4rem;
+    }
+  }
+
+  .Person {
+    .photo {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
 
   .card, .Card {
     width: 100%;
@@ -95,6 +176,19 @@
     font-size: 2.2rem !important;
   }
 
+  .Person {
+    width: 100%;
+    margin: 0 auto;
+    .photo {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .name {
+      font-size: 1rem;
+    }
+  }
+
   .Page {
     section {
       max-width: 1400px;
@@ -116,6 +210,55 @@
     }
   }
 
+  nav {
+    ul {
+      li {
+        margin: 0px 5px;
+        font-size: 0.65rem;
+        padding: 20px 5px;
+
+        &.rsvp {
+          top: 8px;
+          padding-top: 10px;
+          right: 5px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .cv-logo {
+      left: 5px;
+    }
+  }
+
+  .ribbon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .detailsSection {
+    margin-top: 2rem;
+    .and {
+      font-size: 2rem;
+      margin-top: 6rem;
+    }
+
+    .are-getting-married {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p.smaller {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .storySection {
+    padding: 2rem;
+    padding-bottom: 30rem;
+    background-position: 70% 100%;
+  }
+
   .card, .Card {
     width: 100%;
 
@@ -133,6 +276,25 @@
           font-size: 1.1rem;
         }
       }
+    }
+  }
+}
+
+@media all and (max-width: 486px) {
+
+  .Person {
+    width: 100%;
+    margin: 0 auto;
+    .photo {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  .detailsSection {
+    .and {
+      font-size: 2rem;
+      margin-top: 4rem;
     }
   }
 }

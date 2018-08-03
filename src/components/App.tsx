@@ -66,20 +66,14 @@ class App extends React.PureComponent<iProps, iState> {
             <Sticky>
               {({style}) => (
                 <nav style={style}>
-                  <div className="container">
-                    <div className="col-4 logo-wrapper">
-                      <div className="cv-logo"></div>
-                    </div>
-                    <div className="col-8 link-wrapper">
-                      <ul>
-                        <li><Scroll.Link to="scrollToTop" smooth={true} offset={-20} duration={900}>Top</Scroll.Link></li>
-                        <li><Scroll.Link to="scrollToStory" smooth={true} offset={-20} duration={900}>Our Story</Scroll.Link></li>
-                        <li><Scroll.Link to="scrollToWhere" smooth={true} offset={-20} duration={900}>Where</Scroll.Link></li>
-                        <li><Scroll.Link to="scrollToWhen" smooth={true} offset={-90} duration={900}>When</Scroll.Link></li>
-                        <li className="rsvp ribbon" onClick={this.scrollToRSVP}>RSVP</li>
-                      </ul>
-                    </div>
-                  </div>
+                  <ul>
+                    <li className="cv-logo"></li>
+                    <li><Scroll.Link to="scrollToTop" smooth={true} offset={-20} duration={900}>Top</Scroll.Link></li>
+                    <li><Scroll.Link to="scrollToStory" smooth={true} offset={-20} duration={900}>Our Story</Scroll.Link></li>
+                    <li><Scroll.Link to="scrollToWhere" smooth={true} offset={-20} duration={900}>Where</Scroll.Link></li>
+                    <li><Scroll.Link to="scrollToWhen" smooth={true} offset={-90} duration={900}>When</Scroll.Link></li>
+                    <li className="rsvp ribbon" onClick={this.scrollToRSVP}>RSVP</li>
+                  </ul>
                 </nav>
               )}
             </Sticky>
