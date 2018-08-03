@@ -7,11 +7,19 @@
 
   .photo {
     margin: 0rem auto 1.4rem auto;
-    width: 14rem;
-    height: 14rem;
+    width: 18rem;
+    height: 18rem;
     background-color: map-get($colors, primary100);
     border-radius: 50%;
     border: 10px solid map-get($colors, primary30);
+    overflow: hidden;
+    outline: none;
+
+    img {
+      width: 100%;
+      border: none;
+      outline: none;
+    }
   }
 
   .name {

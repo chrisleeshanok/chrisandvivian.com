@@ -20,6 +20,8 @@ interface iState {
 import themanorCeremonyImage from '../media/images/themanor-ceremony2.jpg'
 import themanorReceptionImage from '../media/images/themanor-elizabeth-hall.jpg'
 import themanor from '../media/images/themanor.jpg'
+import bride from '../media/images/bride.jpg'
+import groom from '../media/images/groom.jpg'
 
 class App extends React.PureComponent<iProps, iState> {
 
@@ -69,7 +71,8 @@ class App extends React.PureComponent<iProps, iState> {
                       <ul>
                         <li><Scroll.Link to="scrollToTop" smooth={true} offset={-20} duration={900}>Top</Scroll.Link></li>
                         <li><Scroll.Link to="scrollToStory" smooth={true} offset={-20} duration={900}>Our Story</Scroll.Link></li>
-                        <li><Scroll.Link to="scrollToWhenAndWhere" smooth={true} offset={-20} duration={900}>When & Where</Scroll.Link></li>
+                        <li><Scroll.Link to="scrollToWhere" smooth={true} offset={-20} duration={900}>Where</Scroll.Link></li>
+                        <li><Scroll.Link to="scrollToWhen" smooth={true} offset={-90} duration={900}>When</Scroll.Link></li>
                         <li className="rsvp ribbon" onClick={this.scrollToRSVP}>RSVP</li>
                       </ul>
                     </div>
@@ -82,9 +85,9 @@ class App extends React.PureComponent<iProps, iState> {
           <PageSection className="detailsSection" backgroundColor="transparent">
             <section>
               <div className="container-fluid">
-                <div className="col-5 text-right"><Person name="Chris Lee-Shanok"/></div>
+                <div className="col-5 text-right"><Person name="Chris Lee-Shanok" photo={groom}/></div>
                 <div className="col-2 text-center and-container"><span className="and">&</span></div>
-                <div className="col-5 text-left"><Person name="Vivian Li"/></div>
+                <div className="col-5 text-left"><Person name="Vivian Li" photo={bride} /></div>
               </div>
               <div className="container-fluid are-getting-married">
                 <div className="col-12">
@@ -114,7 +117,7 @@ class App extends React.PureComponent<iProps, iState> {
             </section>
           </PageSection>
 
-          <Scroll.Element name="scrollToWhenAndWhere"></Scroll.Element>
+          <Scroll.Element name="scrollToWhere"></Scroll.Element>
           <PageSection className="whenAndWhereSection" backgroundColor="#f6f8fb">
             <section>
               <h1>When & Where</h1>
@@ -135,6 +138,8 @@ class App extends React.PureComponent<iProps, iState> {
                 </Card>
               </div>
 
+
+              <Scroll.Element name="scrollToWhen"></Scroll.Element>
               <div className="wrapper">
                 <Card className="left" image={themanorCeremonyImage}>
                   <div className="description">
