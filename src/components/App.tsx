@@ -1,5 +1,4 @@
 import * as React from 'react'
-import './App.scss'
 
 import * as Scroll from 'react-scroll'
 import { Sticky, StickyContainer } from 'react-sticky'
@@ -22,6 +21,10 @@ import themanorReceptionImage from '../media/images/themanor-elizabeth-hall.jpg'
 import themanor from '../media/images/themanor.jpg'
 import bride from '../media/images/bride.jpg'
 import groom from '../media/images/groom.jpg'
+import takingPhotos from '../media/images/photos.jpg'
+
+import './App.scss'
+import './AppMedia.scss'
 
 class App extends React.PureComponent<iProps, iState> {
 
@@ -172,25 +175,25 @@ class App extends React.PureComponent<iProps, iState> {
             </section>
           </PageSection>
 
+          <PageSection>
+            <img className="full-width-photo" src={takingPhotos}/>
+          </PageSection>
+
           <Scroll.Element name="scrollToRSVP"></Scroll.Element>
           <PageSection className="rsvpSection">
-            <div className="rsvp-wrapper">
-              <div className="photo">
+              <div className="rsvp-wrapper">
+                <div className="details">
+                  <h1>Will you celebrate with us?</h1>
+                  <p className="important">
+                    Please let us know by August 31st if you are able to attend!
+                  </p>
+                  <p>
+                    If you are unable to RSVP electronically, please <a href="mailto:chrisxvivian@gmail.com">email us</a> or call Chris @ 1 (647) 618-5787.
+                  </p>
 
+                  <button className="rsvp-button" onClick={this.openRSVPURL}>Continue to RSVP</button>
+                </div>
               </div>
-              <div className="details">
-                <h1>Will you celebrate with us?</h1>
-                <p className="important">
-                  Please let us know by August 31st if you are able to attend!
-                </p>
-                <p>
-                  We are using WithJoy's RSVP system. If you experience any trouble, <a href="mailto:chrisxvivian@gmail.com">email us</a> and we'll help you out. <br/>
-                  If you are unable to RSVP electronically, please call Chris @ 1 (647) 618-5787.
-                </p>
-
-                <button className="rsvp-button" onClick={this.openRSVPURL}>RSVP</button>
-              </div>
-            </div>
           </PageSection>
         </StickyContainer>
       </div>

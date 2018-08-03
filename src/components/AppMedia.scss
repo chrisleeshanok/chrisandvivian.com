@@ -1,0 +1,92 @@
+@media all and (max-width: 1199px) {
+  .Page {
+    section {
+      max-width: 1400px;
+      margin: 0rem auto;
+      padding: 6rem 6rem;
+    }
+  }
+
+  .rsvp-wrapper {
+    .details {
+      width: 60%;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .Page {
+    section {
+      max-width: 1400px;
+      margin: 0rem auto;
+      padding: 2rem 2rem;
+    }
+  }
+
+  .rsvp-wrapper {
+    .details {
+      width: 70%;
+    }
+  }
+}
+
+@media all and (max-width: 866px) {
+  .rsvp-wrapper {
+    background-size: auto 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .Page {
+    section {
+      max-width: 1400px;
+      margin: 0rem auto;
+      padding: 2rem 2rem;
+    }
+  }
+
+  .card, .Card {
+    width: 100%;
+
+    &.left, &.right {
+      float: none;
+    }
+  }
+
+  .rsvp-wrapper {
+    background-size: auto 100%;
+
+    .details {
+      width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 575px) {
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  .Page {
+    section {
+      max-width: 1400px;
+      margin: 0rem auto;
+      padding: 2rem 0.5rem;
+    }
+  }
+
+  .card, .Card {
+    width: 100%;
+
+    &.left, &.right {
+      float: none;
+    }
+  }
+
+  .rsvp-wrapper {
+    .details {
+      width: 100%;
+    }
+  }
+}

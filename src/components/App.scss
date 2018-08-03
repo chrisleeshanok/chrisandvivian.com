@@ -191,35 +191,25 @@ $ribbonColor: map-get($colors, secondary100);
 
 .rsvp-wrapper {
   margin: 0;
-  padding: 0;
+  padding: 5rem 2rem;
+  position: relative;
 
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .photo {
-    background-image: url('../media/images/camera1.jpg');
-    background-size: 100%;
-    background-position: bottom right;
-    height: 70vh;
-    width: 50%;
-    margin: 0;
-    float: left;
-  }
+  background-image: url('../media/images/camera1.jpg');
+  background-size: 100% auto;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
 
   .details {
-    height: 70vh;
-    width: 50%;
-    display: table-cell;
-    margin: 0;
-    float: right;
-    vertical-align: center;
+    width: 60%;
+    margin: 0 auto;
     font-family: $alternativeCursiveFont;
     text-align: center;
+    background-color: #fff;
 
-    padding: 20vh 5rem;
+    padding: 2rem;
 
     p {
       color: map-get($colors, primary100);
@@ -247,6 +237,7 @@ $ribbonColor: map-get($colors, secondary100);
       padding: 1rem 2rem;
       border-radius: 5px;
       cursor: pointer;
+      width: 100%;
 
       &:hover {
         color: map-get($colors, primary25);
