@@ -31,7 +31,7 @@ a:hover {
   color: map-get($colors, negative);
   font-family: $alternativeCursiveFont;
 
-  background-image: url('../media/images/cave2.jpg');
+  background-image: url('../media/images/cave2-reduced.jpg');
   background-size: auto 100%;
   background-position: bottom center;
 
@@ -194,7 +194,7 @@ $ribbonColor: map-get($colors, secondary100);
   padding: 5rem 2rem;
   position: relative;
 
-  background-image: url('../media/images/camera1.jpg');
+  background-image: url('../media/images/camera1-reduced.jpg');
   background-size: 100% auto;
   background-position: center right;
   background-repeat: no-repeat;

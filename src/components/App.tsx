@@ -21,7 +21,7 @@ import themanorReceptionImage from '../media/images/themanor-elizabeth-hall.jpg'
 import themanor from '../media/images/themanor.jpg'
 import bride from '../media/images/bride.jpg'
 import groom from '../media/images/groom.jpg'
-import takingPhotos from '../media/images/photos.jpg'
+import takingPhotos from '../media/images/photos-reduced.jpg'
 
 import './App.scss'
 import './AppMedia.scss'
