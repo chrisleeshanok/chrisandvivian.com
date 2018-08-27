@@ -67,11 +67,11 @@ class App extends React.PureComponent<iProps, iState> {
               {({style}) => (
                 <nav style={style}>
                   <ul>
-                    <li className="cv-logo"></li>
-                    <li><Scroll.Link to="scrollToTop" smooth={true} offset={-20} duration={900}>Top</Scroll.Link></li>
+                    <Scroll.Link to="scrollToTop" smooth={true} offset={-20} duration={900}><li className="cv-logo"></li></Scroll.Link>
                     <li><Scroll.Link to="scrollToStory" smooth={true} offset={-20} duration={900}>Our Story</Scroll.Link></li>
                     <li><Scroll.Link to="scrollToWhere" smooth={true} offset={-20} duration={900}>Where</Scroll.Link></li>
                     <li><Scroll.Link to="scrollToWhen" smooth={true} offset={-90} duration={900}>When</Scroll.Link></li>
+                    <li><Scroll.Link to="scrollToMoreInfo" smooth={true} offset={-90} duration={900}>More Info</Scroll.Link></li>
                     <li className="rsvp ribbon" onClick={this.scrollToRSVP}>RSVP</li>
                   </ul>
                 </nav>
@@ -155,7 +155,7 @@ class App extends React.PureComponent<iProps, iState> {
                   <div className="description">
                     <h3>Wedding Party</h3>
                     <p>
-                      Please join us for cocktails, dinner, dancing, games, photos, and a night packed with entertainment.
+                      An hour of cocktails will follow the ceremony. Afterwards we begin dinner, dancing, games, photos, and a night packed with entertainment.
                       We have the lower (Elizabeth) hall which means we have full access to the grounds, including the lake!
                     </p>
                   </div>
@@ -165,6 +165,16 @@ class App extends React.PureComponent<iProps, iState> {
                   </div>
                 </Card>
               </div>
+
+            </section>
+          </PageSection>
+
+          <Scroll.Element name="scrollToMoreInfo"></Scroll.Element>
+          <PageSection className="whenAndWhereSection" backgroundColor="#f6f8fb">
+            <section>
+              <h1>The Finer Details</h1>
+
+
 
             </section>
           </PageSection>
@@ -182,7 +192,7 @@ class App extends React.PureComponent<iProps, iState> {
                     Please let us know by August 31st if you are able to attend!
                   </p>
                   <p>
-                    If you are unable to RSVP electronically, please <a href="mailto:chrisxvivian@gmail.com">email us</a> or call Chris @ 1 (647) 618-5787.
+                    If you are unable to RSVP through WithJoy, please <a href="mailto:chrisxvivian@gmail.com">email us</a> or call Chris @ 1 (647) 618-5787.
                   </p>
 
                   <button className="rsvp-button" onClick={this.openRSVPURL}>Continue to RSVP</button>
