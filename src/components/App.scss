@@ -252,3 +252,34 @@ $ribbonColor: map-get($colors, secondary100);
     }
   }
 }
+
+.topic-row {
+  width: 100%;
+  padding: 2rem 1rem;
+
+  .content {
+    width: 70%;
+    margin: 0 auto;
+
+    .topic {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      font-family: $cursiveTextFont;
+      font-size: 1.5rem;
+      color: map-get($colors, primary100); 
+    }
+
+    .response {
+      display: inline-block;
+      width: 70%;
+      font-size: 0.95rem;
+      line-height: 1.5rem;
+      color: #333333;
+    }
+  }  
+  
+  &:nth-child(2n) {
+    background-color: #fff;
+  }
+}

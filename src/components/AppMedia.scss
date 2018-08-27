@@ -1,3 +1,10 @@
+@media all and (min-width: 1390px) {
+  .Hero {
+    background-size: 100% auto;
+    background-position: bottom center;
+  }
+}
+
 @media all and (max-width: 1199px) {
 
   .Page {
@@ -297,4 +304,10 @@
       margin-top: 4rem;
     }
   }
+}
+
+@media all and (min-width: 555px) and (max-width:888px) {
+  .rsvp-wrapper {
+    background-size: 100% auto !important;
+  }  
 }

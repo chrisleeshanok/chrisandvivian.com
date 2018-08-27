@@ -6,6 +6,16 @@
     max-width: 1400px;
     margin: 0rem auto;
     padding: 6rem 6rem;
+
+    &.force-full-width {
+      width: 100% !important;
+      max-width: none !important;
+    }
+
+    &.no-h-padding {
+      padding-left: 0rem !important;
+      padding-right: 0rem !important;
+    }
   }
 
   h1 {
@@ -13,7 +23,7 @@
     color: map-get($colors, secondary100);
     font-family: 'Dancing Script';
     font-size: 3rem;
-    margin-top: 0rem;
+    margin-top: 3rem;
   }
 
   p {
@@ -60,7 +70,7 @@
     section {
       max-width: 1400px;
       margin: 0rem auto;
-      padding: 6rem 6rem;
+      padding: 3rem 6rem 6rem 6rem;
     }
   }
 }
