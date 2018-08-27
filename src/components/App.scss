@@ -258,12 +258,13 @@ $ribbonColor: map-get($colors, secondary100);
   padding: 2rem 1rem;
 
   .content {
-    width: 70%;
+    max-width: 700px;
+    width: 60%;
     margin: 0 auto;
 
     .topic {
       display: inline-block;
-      width: 40%;
+      width: 35%;
       vertical-align: top;
       font-family: $cursiveTextFont;
       font-size: 1.5rem;
@@ -279,7 +280,7 @@ $ribbonColor: map-get($colors, secondary100);
 
     .response {
       display: inline-block;
-      width: 60%;
+      width: 65%;
       font-size: 0.95rem;
       line-height: 1.5rem;
       color: #333333;

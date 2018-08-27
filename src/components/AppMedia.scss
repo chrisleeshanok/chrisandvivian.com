@@ -87,6 +87,19 @@
     }
   }
 
+  .topic-row {
+    .content {
+      width: 70%;
+
+      .topic {
+        width: 50%;
+      }
+      .response {
+        width: 50%;
+      }
+    }
+  }
+
   .rsvp-wrapper {
     .details {
       width: 70%;
@@ -170,13 +183,7 @@
 
   .topic-row {
     .content {
-      .topic, .response {
-        display: block;
-        width: 100%;
-      }
-      .topic {
-        margin-bottom: 1rem;
-      }
+      width: 80%;
     }
   }
 
@@ -283,6 +290,18 @@
 
     &.left, &.right {
       float: none;
+    }
+  }
+
+  .topic-row {
+    .content {
+      .topic, .response {
+        display: block;
+        width: 100%;
+      }
+      .topic {
+        margin-bottom: 1rem;
+      }
     }
   }
 
