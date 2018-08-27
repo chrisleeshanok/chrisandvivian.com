@@ -68,10 +68,10 @@ class App extends React.PureComponent<iProps, iState> {
                 <nav style={style}>
                   <ul>
                     <Scroll.Link to="scrollToTop" smooth={true} offset={-20} duration={900}><li className="cv-logo"></li></Scroll.Link>
-                    <li><Scroll.Link to="scrollToStory" smooth={true} offset={-20} duration={900}>Our Story</Scroll.Link></li>
+                    <li><Scroll.Link to="scrollToStory" smooth={true} offset={-20} duration={900}>Story</Scroll.Link></li>
                     <li><Scroll.Link to="scrollToWhere" smooth={true} offset={-20} duration={900}>Where</Scroll.Link></li>
                     <li><Scroll.Link to="scrollToWhen" smooth={true} offset={-90} duration={900}>When</Scroll.Link></li>
-                    <li><Scroll.Link to="scrollToMoreInfo" smooth={true} offset={-90} duration={900}>More Info</Scroll.Link></li>
+                    <li><Scroll.Link to="scrollToMoreInfo" smooth={true} offset={-90} duration={900}>More</Scroll.Link></li>
                     <li className="rsvp ribbon" onClick={this.scrollToRSVP}>RSVP</li>
                   </ul>
                 </nav>
@@ -169,18 +169,49 @@ class App extends React.PureComponent<iProps, iState> {
             </section>
           </PageSection>
 
-          <Scroll.Element name="scrollToMoreInfo"></Scroll.Element>
-          <PageSection className="whenAndWhereSection" backgroundColor="#f6f8fb">
-            <section>
-              <h1>The Finer Details</h1>
-
-
-
-            </section>
-          </PageSection>
-
           <PageSection>
             <img className="full-width-photo" src={takingPhotos}/>
+          </PageSection>
+
+          <Scroll.Element name="scrollToMoreInfo"></Scroll.Element>
+          <PageSection className="whenAndWhereSection" backgroundColor="#f6f8fb">
+            <section className="no-h-padding force-full-width">
+              <h1>The Finer Details</h1>
+
+              <div className="topic-row">
+                <div className="content">
+                  <div className="topic">
+                    Accomodations
+                  </div>
+                  <div className="response">
+                    We recommend the Novotel at <em>200 Bass Pro Mills Drive, Vaughan ON, L4K 0B9</em> (<a target="_blank" href="https://goo.gl/maps/FFGxJdrvuq12">map</a>). Rooms have been blocked off under <strong>“Chris & Vivian”</strong>. After the wedding reception, The Manor can help arrange a taxi to your hotel.
+                  </div>
+                </div>
+              </div>
+
+              <div className="topic-row">
+                <div className="content">
+                  <div className="topic">
+                    Parking
+                  </div>
+                  <div className="response">
+                    There is plenty of parking at The Manor. The lot is private so vehicles can be left overnight.
+                  </div>
+                </div>
+              </div>
+
+              <div className="topic-row">
+                <div className="content">
+                  <div className="topic">
+                    Gifts
+                  </div>
+                  <div className="response">
+                    We kindly request no boxed gifts.
+                  </div>
+                </div>
+              </div>
+
+            </section>
           </PageSection>
 
           <Scroll.Element name="scrollToRSVP"></Scroll.Element>
@@ -192,7 +223,7 @@ class App extends React.PureComponent<iProps, iState> {
                     Please let us know by August 31st if you are able to attend!
                   </p>
                   <p>
-                    If you are unable to RSVP through WithJoy, please <a href="mailto:chrisxvivian@gmail.com">email us</a> or call Chris @ 1 (647) 618-5787.
+                    If you are unable to RSVP through WithJoy, please <a href="mailto:chrisxvivian@gmail.com">email us</a> or call Chris @ 1 (647) 618-5787. Please let us know of any dietary restrictions.
                   </p>
 
                   <button className="rsvp-button" onClick={this.openRSVPURL}>Continue to RSVP</button>
