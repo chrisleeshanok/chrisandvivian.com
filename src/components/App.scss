@@ -263,16 +263,23 @@ $ribbonColor: map-get($colors, secondary100);
 
     .topic {
       display: inline-block;
-      width: 30%;
+      width: 40%;
       vertical-align: top;
       font-family: $cursiveTextFont;
       font-size: 1.5rem;
       color: map-get($colors, primary100); 
+
+      .material-icons {
+        font-size: 1.7rem;
+        position: relative;
+        top: 5px;
+        margin-right: 0.5rem;
+      }
     }
 
     .response {
       display: inline-block;
-      width: 70%;
+      width: 60%;
       font-size: 0.95rem;
       line-height: 1.5rem;
       color: #333333;

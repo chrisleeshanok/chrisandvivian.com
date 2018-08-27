@@ -168,6 +168,18 @@
     }
   }
 
+  .topic-row {
+    .content {
+      .topic, .response {
+        display: block;
+        width: 100%;
+      }
+      .topic {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
   .rsvp-wrapper {
     background-size: auto 100%;
 

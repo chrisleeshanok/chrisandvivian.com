@@ -181,7 +181,7 @@ class App extends React.PureComponent<iProps, iState> {
               <div className="topic-row">
                 <div className="content">
                   <div className="topic">
-                    Accomodations
+                  <i className="material-icons">hotel</i> Accomodations
                   </div>
                   <div className="response">
                     We recommend the Novotel at <em>200 Bass Pro Mills Drive, Vaughan ON, L4K 0B9</em> (<a target="_blank" href="https://goo.gl/maps/FFGxJdrvuq12">map</a>). Rooms have been blocked off under <strong>“Chris & Vivian”</strong>. After the wedding reception, The Manor can help arrange a taxi to your hotel.
@@ -192,7 +192,7 @@ class App extends React.PureComponent<iProps, iState> {
               <div className="topic-row">
                 <div className="content">
                   <div className="topic">
-                    Parking
+                  <i className="material-icons">directions_car</i> Parking
                   </div>
                   <div className="response">
                     There is plenty of parking at The Manor. The lot is private so vehicles can be left overnight.
@@ -203,7 +203,7 @@ class App extends React.PureComponent<iProps, iState> {
               <div className="topic-row">
                 <div className="content">
                   <div className="topic">
-                    Gifts
+                  <i className="material-icons">favorite</i> Gifts
                   </div>
                   <div className="response">
                     We kindly request no boxed gifts.
