@@ -1,294 +1,43 @@
 @import '../constants.scss';
 
-
-a:link, a:visited {
-  color: map-get($colors, primary80);
-  text-decoration: underline;
-}
-a:hover {
-  color: map-get($colors, primary50);
-  text-decoration: underline;
-}
-
-.App {
-  background-color: map-get($colors, backgroundColor);
-  height: 100vh;
-}
-
-.loading {
-  height: 100vh;
+.ThankYouRoot {
   width: 100vw;
-}
-
-.Hero {
   height: 100vh;
-  width: 100vw;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
+  display: table;
+  background-color: #213352;
 
-  color: map-get($colors, negative);
-  font-family: $alternativeCursiveFont;
+  .vertical-wrapper {
+    display: table-cell;
+    padding-top: 100px;
+  }
 
-  background-image: url('../media/images/cave2-reduced.jpg');
-  background-size: auto 100%;
-  background-position: bottom center;
-
-  .centered-wrapper {
+  .horizontal-wrapper {
+    margin: 0 auto;
     width: 50%;
-    height: 50%;
-    margin: auto;
-    top: 20%;
-
-    .heroGraphic {
-      width: 36vh;
-      height: 36vh;
-    }
-  }
-}
-
-nav {
-  background-color: map-get($colors, primary25);
-  font-family: $serifTextFont;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: map-get($colors, primary100);
-  text-align: center;
-  border-bottom: 1px solid map-get($colors, primary30);
-  z-index: 1000;
-  overflow: visible;
-  position: relative;
-
-  .logo-wrapper {
-    text-align: right;
-    padding-right: 3rem;
-  }
-
-  .link-wrapper {
-    text-align: left;
-  }
-
-  .cv-logo {
-    display: inline-block;
-    width: 42px;
-    height: 42px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 2rem;
-    top: 7px;
-    background-image: url('../media/images/heroGraphic2-dark-small.png');
-    background-size: 100%;
-  }
-
-  ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-
-
-    li {
-      display: inline-block;
-      margin: 0px 20px;
-      padding: 20px 20px;
-      cursor: pointer;
-
-      &.rsvp {
-        color: #fff;
-        padding: 0;
-        padding-top: 20px;
-        position: absolute;
-        top: 1rem;
-        right: 2rem;
-        z-index: 10000;
-        font-size: 1.1rem;
-        font-family: $cursiveTextFont;
-        text-align: center;
-      }
-    }
-  }
-}
-
-$ribbonColor: map-get($colors, secondary100);
-
-.ribbon {
-
-  background: $ribbonColor;
-  border-right: 1px solid $ribbonColor;
-  border-left: 1px solid $ribbonColor;
-  border-radius: 5px 5px 0 0;
-  box-shadow: 5px 0 0 $ribbonColor,
-              -5px 0 0 $ribbonColor;
-  height: 60px;
-  margin: 0 5px;
-  position: relative;
-  width: 50px;
-  z-index: 10000;
-}
-.ribbon:after,
-.ribbon:before {
-  border-top: 15px solid $ribbonColor;
-  content: '';
-  height: 0;
-  position: absolute;
-  top: 100%;
-  width: 0;
-  z-index: 10000;
-}
-.ribbon:after {
-  border-left: 50px solid transparent;
-  right: -6px;
-}
-.ribbon:before {
-  border-right: 50px solid transparent;
-  left: -6px;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.detailsSection {
-  text-align: center;
-  position: relative;
-
-  .and {
-    display: inline-block;
-    font-size: 6rem;
-    font-family: $cursiveTextFont;
-    color: map-get($colors, primary30);
-    text-align: center;
-    margin-top: 5rem;
-  }
-
-  .are-getting-married {
-    h2 {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      font-size: 3.3rem;
-      color: map-get($colors, secondary100);
-      font-family: $cursiveTextFont;
-    }
-
-    p.smaller {
-      font-size: 1.3rem;
-      color: map-get($colors, primary100);
-      font-family: $alternativeCursiveFont;
-    }
-  }
-}
-
-
-.rsvp-wrapper {
-  margin: 0;
-  padding: 5rem 2rem;
-  position: relative;
-
-  background-image: url('../media/images/camera1-reduced.jpg');
-  background-size: 100% auto;
-  background-position: center right;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  margin: 0 auto;
-
-  .details {
-    width: 60%;
-    margin: 0 auto;
-    font-family: $alternativeCursiveFont;
-    text-align: center;
     background-color: #fff;
-
+    border-radius: 0.5rem;
     padding: 2rem;
+  }
 
-    p {
-      color: map-get($colors, primary100);
-      font-family: $serifTextFont;
-      line-height: 1.5rem;
-      font-size: 0.95rem;
-      color: lighten(#000, 20%);
-      letter-spacing: 0.1px;
+  .photo .thankYouPhoto {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 
-      &.important {
-        font-family: $alternativeCursiveFont;
-        font-size: 1.2rem;
-      }
-    }
+  button {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #213352;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
 
-    button.rsvp-button {
-      outline: none;
-      margin: 0 auto;
-      margin-top: 2rem;
-      background-color: map-get($colors, primary30);
-      border: none;
-      color: map-get($colors, primary100);
-      font-size: 1rem;
-      font-family: $serifTextFont;
-      padding: 1rem 2rem;
-      border-radius: 5px;
-      cursor: pointer;
-      width: 100%;
-
-      &:hover {
-        color: map-get($colors, primary25);
-        background-color: map-get($colors, primary100);
-      }
-
-      &:active {
-        color: map-get($colors, primary25);
-        background-color: map-get($colors, primary80);
-      }
-
+    &:hover {
+      background-color: lighten(#213352, 20%);
     }
   }
-}
 
-.topic-row {
-  width: 100%;
-  padding: 2rem 1rem;
-
-  .content {
-    max-width: 700px;
-    width: 60%;
-    margin: 0 auto;
-
-    .topic {
-      display: inline-block;
-      width: 35%;
-      vertical-align: top;
-      font-family: $alternativeCursiveFont;
-      font-size: 1.3rem;
-      color: map-get($colors, primary100); 
-
-      .material-icons {
-        font-size: 1.7rem;
-        position: relative;
-        top: 5px;
-        margin-right: 0.5rem;
-      }
-    }
-
-    .response {
-      display: inline-block;
-      width: 65%;
-      font-size: 0.95rem;
-      line-height: 1.5rem;
-      color: #333333;
-      font-family: $serifTextFont;
-    }
-  }  
-  
-  &:nth-child(2n) {
-    background-color: #fff;
-  }
 }
