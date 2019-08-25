@@ -18,7 +18,7 @@ $mainGold: #bac6d9;
 
   .horizontal-wrapper {
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     background-color: #fff;
     border-radius: 0.5rem;
     padding: 2rem;
@@ -113,6 +113,80 @@ $mainGold: #bac6d9;
       &:hover {
         background-color: $mainGold;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 799px) {
+  .ThankYouRoot {
+    .horizontal-wrapper {
+      width: 60%;
+    }
+
+    p {
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .ThankYouRoot {
+    .horizontal-wrapper {
+      width: 70%;
+    }
+
+    p {
+      padding: 0rem 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 599px) and (min-width: 400px) {
+  .ThankYouRoot {
+    .vertical-wrapper {
+      padding-top: 50px;
+    }
+
+    .horizontal-wrapper {
+      width: 80%;
+      padding: 1rem;
+    }
+
+    p {
+      padding: 0rem 1rem;
+    }
+
+    .ribbon {
+      height: 3.5rem;
+      line-height: 3.5rem;
+      position: absolute;
+      bottom: 25%;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .ThankYouRoot {
+    .vertical-wrapper {
+      padding-top: 20px;
+    }
+
+    .horizontal-wrapper {
+      padding: 1rem;
+      width: 90%;
+    }
+
+    p {
+      padding: 0rem 0.5rem;
+    }
+
+    .ribbon {
+      height: 3rem;
+      line-height: 3rem;
+      position: absolute;
+      bottom: 25%;
+      font-size: 2rem;
     }
   }
 }
