@@ -29,7 +29,9 @@ export default class App extends React.PureComponent<iProps, iState> {
               Our wedding has come and gone, and we have started an exciting chapter of our lives together.
             </p>
             <p className="description">
-              We feel blessed to have had you all celebrating the big day with us. We are so lucky to have such amazing friends and family.<br/>
+              We feel blessed to have had you all celebrating the big day with us.
+            </p>
+            <p className="description">
               From the bottom of our hearts, thank you for making our day so special.
             </p>
             <p className="description">
